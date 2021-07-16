@@ -1,80 +1,382 @@
-/* Parallax Zoom In Effect */
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-        $(".zoom").css({
-            'background-size': 100 + scroll/50 + '%',
-        });
-    } else {
-        $(".zoom").css({
-            'background-size': 'cover',
-        })
-    } 
-});
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-        $(".about-container").css({
-            'background-size': 100 + scroll/100 + '%',
-        });
-    } else {
-        $(".about-container").css({
-            'background-size': 'cover',
-        })
-    } 
-});
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-        $(".custom-container").css({
-            'background-size': 100 + scroll/200 + '%',
-        });
-    } else {
-        $(".custom-container").css({
-            'background-size': 'cover',
-        })
-    } 
-});
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-        $(".contact-container").css({
-            'background-size': 131 - scroll/198 + '%',
-        });
-    } else {
-        $(".contact-container").css({
-            'background-size': 'cover',
-        })
-    } 
-});
-/* Intersection Observer */
-const faders = document.querySelectorAll('.fade-in');
+/*Entire Page */
+*{
+    scroll-behavior: smooth;
+    
+}
 
-const appearOptions = {
-    threshold: 0.45, 
-    rootMargin: "0px -100px 0px 0px" 
-};
 
-const appearOnScroll = new IntersectionObserver(function(
-    entries, 
-    appearOnScroll
-)   {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
-        }
-    })
-}, 
-appearOptions);
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-})
+/* Navbar */
+.navbar{
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+.nav a{
+    color: red;
+}
+.navbar-nav{
+    text-align: right;
+    display: flex;
+    justify-content: start;
+}
+.dropdown-menu{
+    text-align: right;
+}
+.dropdown-item:hover{
+    color: red;
+    transition: 300ms;
+}
+.nav-link {
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nav-link:hover{
+    background: linear-gradient(185deg, white 10%, gold 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: red;
+    transition: 500ms;
+}
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
-});
+/* Home Page */
+.zoom{
+    display: flex;
+    text-align: center;
+    min-height: 120vh;
+    width: 100%;
+    background-image: url(./images/background-img9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.home-container-text{
+    position: absolute;
+}
+.home-container-text h1{
+    font-size: 80px;
+    position: relative;
+    top: -70px;
+    left: -450px;
+    background: linear-gradient(185deg, gold 10%, white 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.home-container-text h2{
+    font-size: 30px;
+    position: relative;
+    top: -80px;
+    left: -450px;
+    background: linear-gradient(185deg, gold 10%, white 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 
+/* Sub Home Page */
+.services-container-text{
+    min-height: 25vh;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 1.0s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services-container-text h1{
+    font-weight: lighter;
+    color: red;
+    font-size: 20px;
+}
+.service-box{
+    text-align: center;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 600ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+
+/* About Page */
+.about-container{
+    display: flex;
+    text-align: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url(./images/campus2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+}
+.about-background{
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-container-text{
+    width: 50%;
+}
+.about-container-text h1{
+    font-size: 60px;
+    color: white;
+}
+.about-container-text p{
+    font-size: 22px;
+    color: white;
+}
+
+/* Carousel */
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    margin-top: 35px;
+}
+.carousel-inner img {
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+.image-box{
+    margin: 0px 30px 0px 30px;
+    flex: 0 0 auto;
+    width: 500px;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+}
+.carousel-caption h5 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+.image-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-box-header h1{
+    color: white;
+    font-size: 30px;
+}
+/* Prices */
+.prices-container{
+    min-height: 140vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.price-box{
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 410px;
+    height: 285px;
+    background-color: white;
+    border-bottom: 2px solid red;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.title-box{
+    position: absolute;
+    top: 0;
+}
+.title-box h1{
+    font-size: 50px;
+}
+
+.gallery-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    background-color: black;
+    background-image: url(./images/backgrond-img9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+.gallery-container::-webkit-scrollbar{
+    display: none;
+}
+.gallery-header{
+    color: white;
+    height: 12vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-header-text{
+    font-size: 60px;
+}
+.gallery-header-end{
+    transform: rotate(90deg);
+    color: white;
+}
+#img-box1{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#img-box2{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#img-box3{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#img-box4{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#img-box5{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+.img-boxs{
+    background-color: transparent;
+    height: 550px;
+    width: 25px;
+    margin: 30px;
+    list-style-type: none;
+    flex: 0 0 auto;
+}
+.custom-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url(./images/goldtoe5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+.form-title{
+    font-size: 65px;
+}
+.form-subtitle{
+    font-size: 25px;
+}
+#custom-btn{
+    width: 415px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+.background{
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.date{
+    padding-left: 0px;
+    width: 415px;
+}
+.contact-container{
+    display: flex;
+    text-align: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url(./images/atlanta-background-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    margin: 0;
+}
+.contact-background{
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-container-text{
+    height: 60vh;
+    width: 100vh;
+}
+.contact-container-text h1{
+    font-size: 60px;
+    color: white;
+}
+.contact-form{
+    top: 10px;
+}
+#contact-form-text{
+    height: 20vh;
+    width: 70vh;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+}
+.contact-btn{
+    margin-top: 15px;
+}
+.contact-container-text h2{
+    font-size: 27px;
+    color: white;
+    margin-top: 35px;
+}
+.instagram-box{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.instagram-item{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.instagram-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
