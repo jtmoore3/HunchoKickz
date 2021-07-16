@@ -1,15 +1,54 @@
-window.onscroll = function () { myFunction() };
-
-function myFunction () {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-}
-
+/* Parallax Zoom In Effect */
+$(window).scroll(function() {
+    if ($(window).width() > 1200) {
+        let scroll = $(window).scrollTop();
+        $(".zoom").css({
+            'background-size': 100 + scroll/50 + '%',
+        });
+    } else {
+        $(".zoom").css({
+            'background-size': 'cover',
+        })
+    } 
+});
+$(window).scroll(function() {
+    if ($(window).width() > 1200) {
+        let scroll = $(window).scrollTop();
+        $(".about-container").css({
+            'background-size': 100 + scroll/100 + '%',
+        });
+    } else {
+        $(".about-container").css({
+            'background-size': 'cover',
+        })
+    } 
+});
+$(window).scroll(function() {
+    if ($(window).width() > 1200) {
+        let scroll = $(window).scrollTop();
+        $(".custom-container").css({
+            'background-size': 100 + scroll/200 + '%',
+        });
+    } else {
+        $(".custom-container").css({
+            'background-size': 'cover',
+        })
+    } 
+});
+$(window).scroll(function() {
+    if ($(window).width() > 1200) {
+        let scroll = $(window).scrollTop();
+        $(".contact-container").css({
+            'background-size': 131 - scroll/198 + '%',
+        });
+    } else {
+        $(".contact-container").css({
+            'background-size': 'cover',
+        })
+    } 
+});
 /* Intersection Observer */
 const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.slide-in');
 
 const appearOptions = {
     threshold: 0.45, 
@@ -38,60 +77,4 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
-
-/* Parallax Zoom In Effect */
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-	    $(".zoom").css({
-            'background-size': 100 + scroll/15 + '%',
-	    });
-    } else {
-        $(".zoom").css({
-            'background-size': 'cover',
-	    })
-    } 
-});
-
-/* $(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-	    $(".cleaning-container").css({
-            'background-size': 100 + scroll/150 + '%',
-        });
-        $(".mesh-container").css({
-            'background-size': 100 + scroll/150 + '%',
-        });
-        $(".uggs-container").css({
-            'background-size': 100 + scroll/150 + '%',
-        });
-        $(".ice-container").css({
-            'background-size': 100 + scroll/150 + '%',
-        });
-        $(".glue-container").css({
-            'background-size': 100 + scroll/150 + '%',
-        });
-        $(".customization-container").css({
-            'background-size': 100 + scroll/150 + '%',
-	    });
-    } else {
-        $(".zoom").css({
-            'background-size': 'cover',
-	    })
-    } 
-}); */
-
-$(window).scroll(function() {
-    if ($(window).width() > 1200) {
-        let scroll = $(window).scrollTop();
-	    $(".contact-container").css({
-            'background-size': 131 - scroll/198 + '%',
-	    });
-    } else {
-        $(".contact-container").css({
-            'background-size': 'cover',
-	    })
-    } 
-});
-
 
