@@ -12,6 +12,9 @@
 .nav a{
     color: red;
 }
+.collapse {
+    justify-content: flex-end;
+}
 .navbar-nav{
     text-align: right;
     display: flex;
@@ -571,6 +574,128 @@
     }
     .gallery-container {
         height: 110vh;
+    }
+    .gallery-header{
+        color: white;
+        height: 12vh;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-header-text{
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .collapse {
+        justify-content: center;
+    }
+    .home-container-text {
+        margin-bottom: 150px;
+    }
+    .home-container-text h1 {
+        position: initial;
+        font-size: 70px;
+    }
+    .home-container-text h2 {
+        position: initial;
+        font-size: 20px;
+        
+    }
+    .about-container-text {
+        width: 60%;
+    }
+    .about-container-text h1 {
+        font-size: 50px;
+    }
+    .about-container-text p {
+        font-size: 18px;
+    }
+    .prices-container{
+        min-height: 140vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .price-box{
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        border-bottom: 2px solid red;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .title-box h1{
+        font-size: 32px;
+    }
+    .services-container-text h1{
+        font-size: 16px;
+    }
+    .info-box p {
+        font-size: 14.5px;
+    }
+    .services-container-text {
+        padding: 15px;
+    }
+    .custom-container {
+        height: 150vh;
+        align-content: center;
+        justify-content: center;
+    }
+    .background {
+        height: 150vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .customization-content-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .form-row {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .form-title{
+        font-size: 55px;
+    }
+    .form-subtitle{
+        font-size: 18px;
+    }
+    label {
+        font-size: 14px;
+    }
+    .date {
+        width: 430px;
+        margin-right: 0;
+        margin-right: 0;
+        text-align: center;
+        margin-left: 45px;
+    }
+    #custom-btn{
+        width: 430px;
+    }
+    .gallery-container {
+        height: 100vh;
     }
     .gallery-header{
         color: white;
