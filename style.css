@@ -431,7 +431,7 @@
         font-size: 20px;
     }
     .prices-container{
-        min-height: 160vh;
+        min-height: 140vh;
         margin: 0;
         padding: 0;
         display: flex;
@@ -490,5 +490,37 @@
     }
     .about-container-text p {
         font-size: 20px;
+    }
+    .prices-container{
+        min-height: 140vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .price-box{
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 300px;
+        height: 285px;
+        background-color: white;
+        border-bottom: 2px solid red;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .title-box h1{
+        font-size: 36px;
+    }
+    .services-container-text h1{
+        font-size: 16px;
+    }
+    .info-box p {
+        font-size: 18px;
     }
 }
