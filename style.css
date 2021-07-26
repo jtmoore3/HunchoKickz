@@ -293,7 +293,7 @@
     font-size: 25px;
 }
 #custom-btn{
-    width: 415px;
+    width: 450px;
     height: 40px;
     background-color: red;
     border: 1px solid red;
@@ -309,7 +309,7 @@
 }
 .date{
     padding-left: 0px;
-    width: 415px;
+    width: 450px;
 }
 .contact-container{
     display: flex;
