@@ -468,6 +468,9 @@
     .customization-content-box {
         margin-left: 40px;
     }
+    label {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
@@ -540,5 +543,8 @@
     }
     .customization-content-box {
         margin-left: 40px;
+    }
+    label {
+        font-size: 18px;
     }
 }
