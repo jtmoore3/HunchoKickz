@@ -651,12 +651,12 @@
         padding: 15px;
     }
     .custom-container {
-        height: 150vh;
+        height: 185vh;
         align-content: center;
         justify-content: center;
     }
     .background {
-        height: 150vh;
+        height: 185vh;
         display: flex;
         justify-content: space-evenly;
         align-content: center;
