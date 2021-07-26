@@ -459,6 +459,15 @@
     .services-container-text h1{
         font-size: 16px;
     }
+    .form-title{
+        font-size: 55px;
+    }
+    .form-subtitle{
+        font-size: 20px;
+    }
+    .customization-content-box {
+        margin-left: 40px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
@@ -522,5 +531,14 @@
     }
     .info-box p {
         font-size: 18px;
+    }
+    .form-title{
+        font-size: 55px;
+    }
+    .form-subtitle{
+        font-size: 20px;
+    }
+    .customization-content-box {
+        margin-left: 40px;
     }
 }
