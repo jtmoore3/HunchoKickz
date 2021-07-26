@@ -422,15 +422,13 @@
         -webkit-text-fill-color: transparent;
     }
     .about-container-text {
-        width: 50%;
+        width: 60%;
     }
     .about-container-text h1 {
         font-size: 55px;
-        color: white;
     }
     .about-container-text p {
         font-size: 20px;
-        color: white;
     }
 }
 
@@ -454,5 +452,14 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .about-container-text {
+        width: 60%;
+    }
+    .about-container-text h1 {
+        font-size: 55px;
+    }
+    .about-container-text p {
+        font-size: 20px;
     }
 }
