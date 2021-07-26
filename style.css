@@ -471,6 +471,22 @@
     label {
         font-size: 18px;
     }
+    .gallery-container {
+        height: 100vh;
+    }
+    .gallery-header{
+        color: white;
+        height: 12vh;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-header-text{
+        font-size: 55px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
@@ -552,5 +568,21 @@
     }
     #custom-btn{
         width: 350px;
+    }
+    .gallery-container {
+        height: 100vh;
+    }
+    .gallery-header{
+        color: white;
+        height: 12vh;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-header-text{
+        font-size: 55px;
     }
 }
