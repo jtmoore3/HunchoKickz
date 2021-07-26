@@ -710,4 +710,9 @@
     .gallery-header-text{
         font-size: 55px;
     }
+    .instagram-item a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
 }
