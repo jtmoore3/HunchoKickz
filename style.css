@@ -547,4 +547,10 @@
     label {
         font-size: 18px;
     }
+    .date {
+        width: 350px;
+    }
+    #custom-btn{
+        width: 350px;
+    }
 }
