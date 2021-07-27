@@ -768,6 +768,33 @@
     .title-box h1{
         font-size: 50px;
     }
+    .cleaning-info-box {
+        margin-top: 20px;
+    }
+    .suede-title-box{
+        margin-top: 60px;
+    }
+    .suede-info-box {
+        margin-top: 80px;
+    }
+    .ugg-title-box{
+        margin-top: 60px;
+    }
+    .ugg-info-box {
+        margin-top: 80px;
+    }
+    .ice-title-box{
+        margin-top: 30px;
+    }
+    .ice-info-box {
+        margin-top: 80px;
+    }
+    .glue-title-box{
+        margin-top: 60px;
+    }
+    .glue-info-box {
+        margin-top: 80px;
+    }
     .services-container {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -840,6 +867,13 @@
     }
     .gallery-header-text{
         font-size: 55px;
+    }
+    .img-boxs{
+        display: none;
+    }
+    .img-boxs2{
+        display: initial;
+        margin: 0;
     }
     .instagram-item a{
         color: white;
