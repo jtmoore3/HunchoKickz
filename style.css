@@ -1075,3 +1075,211 @@
         margin: 0;
     }
 }
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .collapse {
+        justify-content: center;
+    }
+    .home-container-text {
+        margin-bottom: 150px;
+    }
+    .home-container-text h1 {
+        position: initial;
+        font-size: 60px;
+    }
+    .home-container-text h2 {
+        position: initial;
+        font-size: 20px;
+        
+    }
+    .about-container-text {
+        width: 80%;
+    }
+    .about-container-text h1 {
+        font-size: 40px;
+    }
+    .about-container-text p {
+        font-size: 16px;
+    }
+    .prices-container{
+        min-height: 160vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .price-box{
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 325px;
+        height: 250px;
+        background-color: white;
+        border-bottom: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .title-box h1{
+        font-size: 40px;
+    }
+    .cleaning-info-box {
+        margin-top: 20px;
+    }
+    .suede-title-box{
+        margin-top: 60px;
+    }
+    .suede-info-box {
+        margin-top: 80px;
+    }
+    .ugg-title-box{
+        margin-top: 60px;
+    }
+    .ugg-info-box {
+        margin-top: 80px;
+    }
+    .ice-title-box{
+        margin-top: 30px;
+    }
+    .ice-info-box {
+        margin-top: 80px;
+    }
+    .glue-title-box{
+        margin-top: 60px;
+    }
+    .glue-info-box {
+        margin-top: 80px;
+    }
+    .services-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .services-container-text h1{
+        font-size: 16px;
+    }
+    .info-box p {
+        font-size: 18px;
+    }
+    .services-container-text {
+        padding: 25px;
+    }
+    .custom-container {
+        height: 185vh;
+        align-content: center;
+        justify-content: center;
+    }
+    .custom-img-container {
+        width: 350px;
+        margin: 0;
+    }
+    .img-container {
+        margin: 0;
+    }
+    .custom-img-box {
+        width: 350px;
+    }
+    .pointer-event {
+        margin: 0;
+    }
+    #carouselExampleCaptions6{
+        margin-right: 0;
+    }
+    .slide {
+        margin: 0;
+    }
+    .carousel {
+        margin: 0;
+    }
+    .background {
+        height: 185vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .customization-content-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .form-row {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 480px;
+        margin-right: 0;
+    }
+    .form-title{
+        font-size: 40px;
+    }
+    .form-subtitle{
+        font-size: 14px;
+    }
+    .form-group {
+        width: 250px;
+    }
+    label {
+        font-size: 14px;
+    }
+    .date {
+        width: 240px;
+        text-align: center;
+        padding-right: 0;
+        margin-left: 115px;
+
+    }
+    #custom-btn{
+        width: 120px;
+    }
+    .gallery-container {
+        height: 98vh;
+        padding-bottom: 10px;
+    }
+    .gallery-header{
+        color: white;
+        height: 11vh;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-header-text{
+        font-size: 55px;
+    }
+    .image-box {
+        width: 350px;
+        margin: 0;
+    }
+    
+    .img-boxs{
+        display: none;
+    }
+    .img-boxs2{
+        display: initial;
+        margin: 0;
+    }
+    .instagram-item a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .instagram-box {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    #contact-form-text{
+        width: 10px;
+    }
+}
