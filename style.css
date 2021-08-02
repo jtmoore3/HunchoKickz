@@ -1074,6 +1074,9 @@
         justify-content: center;
         margin: 0;
     }
+    #contact-form-text{
+        width: 400px;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 499px) {
