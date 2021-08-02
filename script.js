@@ -48,7 +48,7 @@ $(window).scroll(function() {
     } 
 });
 /* Intersection Observer */
-const faders = document.querySelectorAll('.fade-in');
+/* const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
     threshold: 0.45, 
@@ -72,4 +72,4 @@ appearOptions);
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
-})
+}) */
