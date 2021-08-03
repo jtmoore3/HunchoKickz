@@ -1,5 +1,5 @@
 /* Parallax Zoom In Effect */
-$(window).scroll(function() {
+/* $(window).scroll(function() {
     if ($(window).width() > 1200) {
         let scroll = $(window).scrollTop();
         $(".zoom").css({
@@ -46,7 +46,7 @@ $(window).scroll(function() {
             'background-size': 'cover',
         })
     } 
-});
+}); */
 /* Intersection Observer */
 /* const faders = document.querySelectorAll('.fade-in');
 
