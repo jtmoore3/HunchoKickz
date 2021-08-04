@@ -409,7 +409,7 @@
         position: relative;
         top: -70px;
         left: -350px;
-        background: linear-gradient(185deg, gold 10%, white 70%);
+        background: linear-gradient(185deg, gold 10%, rgb(138, 130, 130) 70%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -721,6 +721,19 @@
     .collapse {
         justify-content: center;
     }
+    .home-container {
+        display: flex;
+        text-align: center;
+        min-height: 120vh;
+        width: 100%;
+        background-image: url(./images/background-img9.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
     .home-container-text {
         margin-bottom: 150px;
     }
@@ -890,6 +903,19 @@
 @media (min-width: 500px) and (max-width: 576px) {
     .collapse {
         justify-content: center;
+    }
+    .home-container {
+        display: flex;
+        text-align: center;
+        min-height: 120vh;
+        width: 100%;
+        background-image: url(./images/background-img9.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
     .home-container-text {
         margin-bottom: 150px;
@@ -1082,6 +1108,19 @@
 @media (min-width: 300px) and (max-width: 499px) {
     .collapse {
         justify-content: center;
+    }
+    .home-container {
+        display: flex;
+        text-align: center;
+        min-height: 120vh;
+        width: 100%;
+        background-image: url(./images/background-img9.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
     .home-container-text {
         margin-bottom: 150px;
