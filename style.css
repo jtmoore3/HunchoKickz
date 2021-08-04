@@ -51,7 +51,7 @@
     background-image: url(./images/background-img9.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -88,7 +88,7 @@
     background-color: black;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     transition: 1.0s;
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +119,7 @@
     background-image: url(./images/campus2.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     align-items: center;
 }
 .about-background{
@@ -221,7 +221,7 @@
     background-color: black;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding-bottom: 10px;
 }
 .gallery-container::-webkit-scrollbar{
@@ -286,7 +286,7 @@
     background-image: url(./images/goldtoe5.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: white;
 }
 .form-title{
@@ -322,7 +322,7 @@
     background-image: url(./images/atlanta-background-3.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     align-items: center;
     margin: 0;
 }
